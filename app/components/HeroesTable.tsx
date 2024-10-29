@@ -8,7 +8,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "../../components/ui/table";
+} from "@/components/ui/table";
 import useIntersection from "../hooks/useIntersection";
 import Link from "next/link";
 import fetchPeople from "../api/fetchPeople";
