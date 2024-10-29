@@ -26,6 +26,7 @@ export type HeroesResponse = {
 };
 
 export type Film = {
+  id: number;
   title: string;
   episode_id: number;
   opening_crawl: string;
