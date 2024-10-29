@@ -10,6 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import useIntersection from "../hooks/useIntersection";
+
 import Link from "next/link";
 import fetchPeople from "../api/fetchPeople";
 
@@ -17,6 +18,7 @@ const HeroesTable: FC<{ heroes: Array<Hero>; next: string }> = ({
   heroes,
   next,
 }) => {
+  const [isFetching, setIsFetching] = useState(false);
   const [heroesState, setHeroesState] = useState(heroes);
   const [nextState, setNextState] = useState(next);
   const intersectionRef = useRef(null);
@@ -27,16 +29,21 @@ const HeroesTable: FC<{ heroes: Array<Hero>; next: string }> = ({
   });
 
   useEffect(() => {
-    if (!intersection?.isIntersecting || !nextState) {
+    if (!intersection?.isIntersecting || !nextState || isFetching) {
       return;
     }
     const launch = async () => {
-      const response = await fetchPeople(nextState);
-      setHeroesState((prev) => [...prev, ...response.results]);
-      setNextState(response.next);
+      setIsFetching(true);
+      try {
+        const response = await fetchPeople(nextState);
+        setHeroesState((prev) => [...prev, ...response.results]);
+        setNextState(response.next);
+      } finally {
+        setIsFetching(false);
+      }
     };
     launch();
-  }, [intersection, nextState]);
+  }, [intersection, nextState, isFetching]);
   return (
     <div className="flex flex-col">
       <Table>
