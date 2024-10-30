@@ -36,4 +36,4 @@ Follow these steps to run the tests:
     ![Step 3](./Step%203.png)
 
 11. Sit back and watch the tests pass!
-12. Enjoy your success!
+12. Enjoy!
