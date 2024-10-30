@@ -21,7 +21,7 @@ export type Hero = {
 
 export type HeroesResponse = {
   count: number;
-  next: string;
+  next: string | null;
   results: Array<Hero>;
 };
 
