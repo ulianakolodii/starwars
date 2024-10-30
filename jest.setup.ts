@@ -1,8 +1,4 @@
 global.ResizeObserver = class {
-  constructor(callback) {
-    this.callback = callback;
-  }
-
   observe() {}
 
   unobserve() {}
@@ -10,13 +6,9 @@ global.ResizeObserver = class {
   disconnect() {}
 };
 global.IntersectionObserver = class {
-  constructor(callback) {
-    this.callback = callback;
-  }
-
   observe() {}
 
   unobserve() {}
 
   disconnect() {}
-};
+} as unknown as typeof IntersectionObserver;
