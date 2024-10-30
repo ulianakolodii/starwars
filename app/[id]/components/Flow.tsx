@@ -25,8 +25,8 @@ const Flow: FC<{
   initialNodes: Array<Node>;
   initialEdges: Array<Edge>;
 }> = ({ initialNodes, initialEdges }) => {
-  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+  const [nodes, , onNodesChange] = useNodesState(initialNodes);
+  const [edges, , onEdgesChange] = useEdgesState(initialEdges);
 
   const handleDragOver: DragEventHandler<HTMLDivElement> = useCallback(
     (event) => {
