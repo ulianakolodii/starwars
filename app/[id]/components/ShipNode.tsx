@@ -15,7 +15,7 @@ const ShipNode: FC<{ data: Ship }> = ({
     <>
       <div
         className={
-          "flex flex-col items-start gap-2 rounded-lg border p-3 text-left text-sm transition-all hover:bg-accent"
+          "flex flex-col items-start gap-2 rounded-lg border p-3 max-w-[400px] bg-white text-left text-sm transition-all hover:bg-accent"
         }
       >
         <div className="flex w-full flex-col gap-1 min-w-80">
