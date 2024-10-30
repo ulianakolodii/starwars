@@ -14,7 +14,7 @@ import useIntersection from "../hooks/useIntersection";
 import Link from "next/link";
 import fetchPeople from "../api/fetchPeople";
 
-const HeroesTable: FC<{ heroes: Array<Hero>; next: string }> = ({
+const HeroesTable: FC<{ heroes: Array<Hero>; next: string | null }> = ({
   heroes,
   next,
 }) => {
