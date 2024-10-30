@@ -45,11 +45,11 @@ const HeroesTable: FC<{ heroes: Array<Hero>; next: string }> = ({
     launch();
   }, [intersection, nextState, isFetching]);
   return (
-    <div className="flex flex-col px-11">
+    <div className="flex flex-col">
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead>Name</TableHead>
+            <TableHead className="pl-11">Name</TableHead>
             <TableHead>Birth</TableHead>
             <TableHead>Look</TableHead>
             <TableHead>Home</TableHead>
@@ -74,7 +74,7 @@ const HeroesTable: FC<{ heroes: Array<Hero>; next: string }> = ({
               <TableRow key={id} className="cursor-default">
                 <TableCell>
                   <Link href={`/${id}`}>
-                    <span className="text-lg font-semibold">{name}</span>
+                    <span className="text-lg font-semibold pl-11">{name}</span>
                   </Link>
                 </TableCell>
                 <TableCell>{birth_year !== "unknown" && birth_year}</TableCell>
