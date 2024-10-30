@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ReactFlowProvider } from "@xyflow/react";
 import Flow from "./components/Flow";
 import fetchGraph from "../api/fetchGraph";
 import createNodes from "./utils/createNodes";
@@ -19,10 +20,12 @@ const HeroPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   }
   return (
     <div>
-      <Flow
-        initialEdges={createEdges({ hero, films, ships })}
-        initialNodes={createNodes({ hero, films, ships })}
-      />
+      <ReactFlowProvider>
+        <Flow
+          initialEdges={createEdges({ hero, films, ships })}
+          initialNodes={createNodes({ hero, films, ships })}
+        />
+      </ReactFlowProvider>
     </div>
   );
 };
