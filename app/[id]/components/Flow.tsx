@@ -13,6 +13,7 @@ import "../../../tailwind.config";
 import HeroNode from "./HeroNode";
 import FilmNode from "./FilmNode";
 import ShipNode from "./ShipNode";
+import Link from "next/link";
 
 const nodeTypes = {
   heroNode: HeroNode,
@@ -37,6 +38,9 @@ const Flow: FC<{
 
   return (
     <div className="w-screen h-screen">
+      <Link href="/" className="text-sm mt-3 ml-3">
+        ← back to list
+      </Link>
       <ReactFlow
         nodes={nodes}
         edges={edges}
