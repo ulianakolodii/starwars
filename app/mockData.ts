@@ -1,5 +1,5 @@
-export const mockedFilms = [
-  {
+export const mockedFilms = {
+  1: {
     characters: [10, 12, 13, 14, 15, 16, 18, 19, 1, 2, 3, 4, 5, 6, 7, 8, 9, 81],
     created: "2014-12-10T14:23:31.880000Z",
     director: "George Lucas",
@@ -12,12 +12,12 @@ export const mockedFilms = [
     producer: "Gary Kurtz, Rick McCallum",
     release_date: "1977-05-25",
     species: [1, 2, 3, 4, 5],
-    starships: [2, 3, 5, 9, 10, 11, 12, 13, 74],
+    starships: [48, 59],
     title: "A New Hope",
     url: "https://sw-api.starnavi.io/films/1/",
     vehicles: [4, 6, 7, 8],
   },
-  {
+  2: {
     characters: [10, 13, 14, 18, 20, 21, 22, 23, 24, 25, 26, 1, 2, 3, 4, 5],
     created: "2014-12-12T11:26:24.656000Z",
     director: "Irvin Kershner",
@@ -30,12 +30,12 @@ export const mockedFilms = [
     producer: "Gary Kurtz, Rick McCallum",
     release_date: "1980-05-17",
     species: [1, 2, 3, 6, 7],
-    starships: [3, 10, 11, 12, 15, 17, 21, 22, 23, 59],
+    starships: [59],
     title: "The Empire Strikes Back",
     url: "https://sw-api.starnavi.io/films/2/",
     vehicles: [8, 14, 16, 18, 19, 20],
   },
-];
+};
 
 export const mockedFilm = {
   characters: [10, 12, 13, 14, 15, 16, 18, 19, 1, 2, 3, 4, 5, 6, 7, 8, 9, 81],
@@ -56,8 +56,8 @@ export const mockedFilm = {
   vehicles: [4, 6, 7, 8],
 };
 
-export const mockedShips = [
-  {
+export const mockedShips = {
+  48: {
     MGLT: "unknown",
     cargo_capacity: "60",
     consumables: "7 days",
@@ -78,7 +78,7 @@ export const mockedShips = [
     starship_class: "Starfighter",
     url: "https://sw-api.starnavi.io/starships/48/",
   },
-  {
+  59: {
     MGLT: "unknown",
     cargo_capacity: "50000000",
     consumables: "4 years",
@@ -99,71 +99,7 @@ export const mockedShips = [
     starship_class: "capital ship",
     url: "https://sw-api.starnavi.io/starships/59/",
   },
-  {
-    MGLT: "unknown",
-    cargo_capacity: "unknown",
-    consumables: "unknown",
-    cost_in_credits: "unknown",
-    created: "2014-12-20T19:55:15.396000Z",
-    crew: "3",
-    edited: "2014-12-20T21:23:49.948000Z",
-    films: [6],
-    hyperdrive_rating: "0.5",
-    id: 64,
-    length: "29.2",
-    manufacturer:
-      "Theed Palace Space Vessel Engineering Corps/Nubia Star Drives, Incorporated",
-    max_atmosphering_speed: "1050",
-    model: "J-type star skiff",
-    name: "Naboo star skiff",
-    passengers: "3",
-    pilots: [10, 35],
-    starship_class: "yacht",
-    url: "https://sw-api.starnavi.io/starships/64/",
-  },
-  {
-    MGLT: "unknown",
-    cargo_capacity: "60",
-    consumables: "2 days",
-    cost_in_credits: "320000",
-    created: "2014-12-20T19:56:57.468000Z",
-    crew: "1",
-    edited: "2014-12-20T21:23:49.951000Z",
-    films: [6],
-    hyperdrive_rating: "1.0",
-    id: 65,
-    length: "5.47",
-    manufacturer: "Kuat Systems Engineering",
-    max_atmosphering_speed: "1500",
-    model: "Eta-2 Actis-class light interceptor",
-    name: "Jedi Interceptor",
-    passengers: "0",
-    pilots: [10, 11],
-    starship_class: "starfighter",
-    url: "https://sw-api.starnavi.io/starships/65/",
-  },
-  {
-    MGLT: "unknown",
-    cargo_capacity: "140",
-    consumables: "7 days",
-    cost_in_credits: "168000",
-    created: "2014-12-20T20:38:05.031000Z",
-    crew: "1",
-    edited: "2014-12-20T21:23:49.959000Z",
-    films: [6],
-    hyperdrive_rating: "6",
-    id: 74,
-    length: "6.71",
-    manufacturer: "Feethan Ottraw Scalable Assemblies",
-    max_atmosphering_speed: "1100",
-    model: "Belbullab-22 starfighter",
-    name: "Belbullab-22 starfighter",
-    passengers: "0",
-    pilots: [10, 79],
-    starship_class: "starfighter",
-    url: "https://sw-api.starnavi.io/starships/74/",
-  },
-];
+};
 
 export const mockedShip = {
   MGLT: "unknown",
@@ -200,7 +136,7 @@ export const mockedHeroes = [
     eye_color: "blue-gray",
     homeworld: 20,
     species: [1],
-    films: [1, 2, 3, 4, 5, 6],
+    films: [1, 2],
     starships: [48, 59, 64, 65, 74],
     vehicles: [38],
     url: "https://sw-api.starnavi.io/people/10/",
@@ -219,7 +155,7 @@ export const mockedHeroes = [
     eye_color: "blue",
     homeworld: 21,
     species: [1],
-    films: [1, 6],
+    films: [2],
     starships: [],
     vehicles: [],
     url: "https://sw-api.starnavi.io/people/12/",
@@ -238,7 +174,7 @@ export const mockedHeroes = [
     eye_color: "blue",
     homeworld: 14,
     species: [3],
-    films: [1, 2, 3, 6],
+    films: [1],
     starships: [10, 22],
     vehicles: [19],
     url: "https://sw-api.starnavi.io/people/13/",
@@ -297,8 +233,8 @@ export const mockedHero = {
   eye_color: "blue-gray",
   homeworld: 20,
   species: [1],
-  films: [1, 2, 3, 4, 5, 6],
-  starships: [48, 59, 64, 65, 74],
+  films: [1, 2],
+  starships: [48, 59],
   vehicles: [38],
   url: "https://sw-api.starnavi.io/people/10/",
   created: "2014-12-10T16:16:29.192000Z",
