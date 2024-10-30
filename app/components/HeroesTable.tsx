@@ -20,7 +20,7 @@ const HeroesTable: FC<{ heroes: Array<Hero>; next: string }> = ({
 }) => {
   const [isFetching, setIsFetching] = useState(false);
   const [heroesState, setHeroesState] = useState(heroes);
-  const [nextState, setNextState] = useState(next);
+  const [nextState, setNextState] = useState<string | null>(next);
   const intersectionRef = useRef(null);
   const intersection = useIntersection(intersectionRef, {
     root: null,
