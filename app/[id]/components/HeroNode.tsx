@@ -41,21 +41,22 @@ const HeroNode: FC<{
             </div>
             <div className="ml-auto text-xs">{birth_year}</div>
           </div>
-          <div className="text-xs font-medium">
-            {new Date(created).toLocaleString("uk-UK", {
-              year: "numeric",
-              month: "numeric",
-              day: "numeric",
-              hour: "2-digit",
-              minute: "2-digit",
-              second: "2-digit",
-            })}
-          </div>
         </div>
         <div className="flex items-center gap-2">
           {labels.map((label) => (
             <Badge key={label}>{label}</Badge>
           ))}
+        </div>
+        <div className="text-xs font-medium">
+          created:{" "}
+          {new Date(created).toLocaleString("uk-UK", {
+            year: "numeric",
+            month: "numeric",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+          })}
         </div>
       </div>
       <Handle type="source" position={Position.Bottom} />
