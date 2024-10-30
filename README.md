@@ -5,7 +5,7 @@ With the help of **starNAVIwars**, you can investigate more about your favorite 
 ### Interactive Version
 
 You can access the interactive version here:  
-[starNAVIwars Interactive Site](https://starnavi-wars-t4sl.vercel.app/)
+[starNAVIwars](https://starnavi-wars-t4sl.vercel.app/)
 
 ### Video Explanation
 
