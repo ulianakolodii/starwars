@@ -37,3 +37,8 @@ Follow these steps to run the tests:
 
 11. Sit back and watch the tests pass!
 12. Enjoy!
+
+### Additional Notes
+
+- Ensure you have **pnpm** installed in your Codespace. If not, you may need to install it first.
+- Feel free to customize the instructions based on any updates or changes in the process.
