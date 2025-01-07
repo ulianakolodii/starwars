@@ -5,7 +5,7 @@ With the help of **starWars**, you can investigate more about your favorite Star
 ### Interactive Version
 
 You can access the interactive version here:  
-[starNAVIwars](https://starnavi-wars-t4sl.vercel.app/)
+[starWars](https://starwars-omega-two.vercel.app/)
 
 ### Video Explanation
 
