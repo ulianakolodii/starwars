@@ -1,6 +1,6 @@
-# Explore Star Wars Heroes with starNAVIwars
+# Explore Star Wars Heroes
 
-With the help of **starNAVIwars**, you can investigate more about your favorite Star Wars heroes!
+With the help of **starWars**, you can investigate more about your favorite Star Wars heroes!
 
 ### Interactive Version
 
